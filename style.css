@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #0b1020;
+    color: #ffffff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #111a30;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #263454;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #58c8ff;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #d7e4f5;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #58c8ff;
+}
+
+.hero {
+    min-height: 490px;
+    padding: 90px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(120deg, #111a30, #192b55, #30215b);
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.tag, .section-title span, .about-content span {
+    color: #58c8ff;
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 54px;
+    margin: 20px 0;
+}
+
+.hero h1 span {
+    color: #58c8ff;
+}
+
+.hero p {
+    color: #c2cde0;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: linear-gradient(90deg, #268cff, #8859f5);
+    color: white;
+    padding: 15px 28px;
+    border-radius: 9px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+}
+
+.hero-icon {
+    font-size: 150px;
+    filter: drop-shadow(0 0 30px #398dff);
+}
+
+.courses {
+    padding: 85px 8%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title h2 {
+    font-size: 35px;
+    margin: 15px 0;
+}
+
+.section-title p {
+    color: #aab8d0;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.course-card {
+    background: #151f36;
+    padding: 30px 23px;
+    border: 1px solid #293956;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-8px);
+    border-color: #58c8ff;
+}
+
+.card-icon {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.course-card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.course-card p {
+    color: #aab8d0;
+    line-height: 1.6;
+    min-height: 75px;
+}
+
+.course-card a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #58c8ff;
+    text-decoration: none;
+}
+
+.about {
+    padding: 85px 12%;
+    background: #131e35;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 750px;
+    margin: auto;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+.about p {
+    color: #b6c3d8;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.quiz {
+    padding: 85px 8%;
+}
+
+.quiz-box {
+    max-width: 650px;
+    margin: auto;
+    padding: 35px;
+    background: #151f36;
+    border: 1px solid #293956;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.quiz-box h3 {
+    margin-bottom: 25px;
+    font-size: 23px;
+}
+
+#answers button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 12px 0;
+    border: 1px solid #3b5075;
+    border-radius: 8px;
+    background: #202e4c;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#answers button:hover {
+    background: #31548b;
+}
+
+#result {
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.next-btn {
+    display: none;
+    padding: 13px 25px;
+    background: #278cff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+footer {
+    padding: 35px;
+    text-align: center;
+    background: #080d19;
+    color: #9eabc2;
+    line-height: 2;
+}
+
+footer h3 {
+    color: #58c8ff;
+    font-size: 25px;
+}
+
+@media (max-width: 900px) {
+    .course-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        text-align: center;
+        flex-direction: column;
+        padding: 65px 6%;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-icon {
+        font-size: 90px;
+        margin-top: 35px;
+    }
+
+    .course-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title h2 {
+        font-size: 28px;
+    }
+}

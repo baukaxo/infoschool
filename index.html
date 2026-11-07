@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfoSchool — Мир информатики</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">💻 InfoSchool</div>
+        <nav>
+            <a href="#home">Главная</a>
+            <a href="#courses">Обучение</a>
+            <a href="#about">О проекте</a>
+            <a href="#quiz">Тест</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <span class="tag">ОБРАЗОВАТЕЛЬНЫЙ ПОРТАЛ</span>
+            <h1>Открой мир <span>информатики!</span></h1>
+            <p>
+                Изучай программирование, искусственный интеллект,
+                цифровые технологии и кибербезопасность.
+            </p>
+            <a href="#courses" class="btn">Начать обучение →</a>
+        </div>
+        <div class="hero-icon">🚀</div>
+    </section>
+
+    <section class="courses" id="courses">
+        <div class="section-title">
+            <span>НАПРАВЛЕНИЯ</span>
+            <h2>Изучай новые технологии</h2>
+            <p>Выбери интересующее направление и расширяй свои знания.</p>
+        </div>
+
+        <div class="course-grid">
+
+            <div class="course-card">
+                <div class="card-icon">💻</div>
+                <h3>Основы информатики</h3>
+                <p>Информация, компьютер, устройства и алгоритмы.</p>
+                <a href="#about">Подробнее →</a>
+            </div>
+
+            <div class="course-card">
+                <div class="card-icon">🐍</div>
+                <h3>Программирование</h3>
+                <p>Изучай Python, Scratch и создавай собственные проекты.</p>
+                <a href="#about">Подробнее →</a>
+            </div>
+
+            <div class="course-card">
+                <div class="card-icon">🤖</div>
+                <h3>Искусственный интеллект</h3>
+                <p>Узнай, как работает искусственный интеллект и нейросети.</p>
+                <a href="#about">Подробнее →</a>
+            </div>
+
+            <div class="course-card">
+                <div class="card-icon">🔐</div>
+                <h3>Кибербезопасность</h3>
+                <p>Защищай личные данные и безопасно используй интернет.</p>
+                <a href="#about">Подробнее →</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-content">
+            <span>НАША ЦЕЛЬ</span>
+            <h2>Учись сегодня — создавай будущее!</h2>
+            <p>
+                InfoSchool — это образовательный ресурс для школьников,
+                который помогает изучать информатику в доступной,
+                интересной и интерактивной форме.
+            </p>
+        </div>
+    </section>
+
+    <section class="quiz" id="quiz">
+        <div class="section-title">
+            <span>ПРОВЕРЬ СЕБЯ</span>
+            <h2>Мини-тест по информатике</h2>
+            <p>Проверь свои знания с помощью небольшого теста.</p>
+        </div>
+
+        <div class="quiz-box">
+            <h3 id="question">Что означает HTML?</h3>
+            <div id="answers">
+                <button onclick="checkAnswer(0)">Язык разметки гипертекста</button>
+                <button onclick="checkAnswer(1)">Язык программирования</button>
+                <button onclick="checkAnswer(2)">Операционная система</button>
+            </div>
+            <p id="result"></p>
+            <button class="next-btn" id="nextBtn" onclick="nextQuestion()">
+                Следующий вопрос
+            </button>
+        </div>
+    </section>
+
+    <footer>
+        <h3>💻 InfoSchool</h3>
+        <p>Образование • Технологии • Будущее</p>
+        <p>© 2026 InfoSchool. Учебный проект.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
